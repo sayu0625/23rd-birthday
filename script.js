@@ -91,7 +91,6 @@ function showMenu(){
 
 }
 
-// 仮画面
 function showSchedule(){
 
 let html = `
@@ -165,6 +164,7 @@ html += "</div>";
 app.innerHTML = html;
 
 }
+
 
 function showPacking(){
 
