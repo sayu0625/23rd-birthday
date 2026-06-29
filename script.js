@@ -91,11 +91,12 @@ function showMenu(){
 
 }
 
+// 仮画面
 function showSchedule(){
 
+    alert("次に作ります😊");
 
 }
-
 
 function showPacking(){
 
