@@ -1,6 +1,6 @@
 const APP = {
 
-    title:"23birthday",
+    title:"23rd birthday",
 
     name:"Shumma",
 
