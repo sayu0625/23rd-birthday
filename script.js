@@ -1,6 +1,15 @@
+// =======================================
+// 23birthday
+// script.js Part1
+// 初期設定・トップ画面
+// =======================================
+
 const app = document.getElementById("app");
 
+// =====================
 // カウントダウン
+// =====================
+
 const today = new Date();
 const trip = new Date(APP.startDate);
 
@@ -20,7 +29,10 @@ if (days > 0) {
     countdown = "旅行中";
 }
 
-// トップ画面
+// =====================
+// TOP画面
+// =====================
+
 function showTop() {
 
     app.innerHTML = `
@@ -38,14 +50,19 @@ function showTop() {
             <h3>${countdown}</h3>
 
             <p>
-            今日は君のためだけに用意した
-            特別な旅。
+
+                今日は君のためだけに用意した
+                <br>
+                特別な旅。
+
             </p>
 
             <p>${APP.tripDate}</p>
 
             <button onclick="showMenu()">
-            旅をはじめる
+
+                旅をはじめる
+
             </button>
 
         </div>
@@ -56,7 +73,10 @@ function showTop() {
 
 }
 
-// ホーム画面
+// =====================
+// HOME画面
+// =====================
+
 function showMenu(){
 
     app.innerHTML = `
@@ -65,23 +85,37 @@ function showMenu(){
 
         <h1>🌊 Home</h1>
 
-        <div class="menuCard" onclick="showSchedule()">
+        <p style="text-align:center;margin-bottom:35px;">
+            行きたい画面を選んでね
+        </p>
 
-            <div class="emoji">📅</div>
+        <div class="menuCard"
+             onclick="showSchedule()">
+
+            <div class="emoji">
+                📅
+            </div>
 
             <h2>Schedule</h2>
 
-            <p>旅行スケジュールを見る</p>
+            <p>
+                旅行スケジュールを見る
+            </p>
 
         </div>
 
-        <div class="menuCard" onclick="showPacking()">
+        <div class="menuCard"
+             onclick="showPacking()">
 
-            <div class="emoji">🎒</div>
+            <div class="emoji">
+                🎒
+            </div>
 
             <h2>Packing List</h2>
 
-            <p>持ち物をチェックする</p>
+            <p>
+                持ち物をチェック
+            </p>
 
         </div>
 
@@ -91,17 +125,147 @@ function showMenu(){
 
 }
 
-// 仮画面
+// =====================
+// 仮の画面
+// （Part2で完成させる）
+// =====================
+
 function showSchedule(){
 
-    alert("次に作ります😊");
+    let html = `
+
+    <div class="page">
+
+        <button class="backBtn" onclick="showMenu()">
+            ← Home
+        </button>
+
+        <h1>📅 Schedule</h1>
+
+    `;
+
+    APP.schedule.forEach(day => {
+
+        html += `
+
+        <div class="dayCard">
+
+            <div class="dayTitle">
+                ${day.day}
+            </div>
+
+        `;
+
+        day.items.forEach(item => {
+
+            html += `
+
+            <div class="scheduleItem">
+
+                <div class="left">
+
+            `;
+
+            // 時間がある予定
+            if(item.time){
+
+                html += `
+                    <span class="time">${item.time}</span>
+                `;
+
+            }else{
+
+                html += `
+                    <span class="time"></span>
+                `;
+
+            }
+
+            // タイトル
+            html += `
+                <span>${item.title}</span>
+            `;
+
+            html += `
+                </div>
+            `;
+
+            // Secretなら鍵ボタン
+            if(item.secret){
+
+                html += `
+
+                <button
+                    class="lockBtn"
+                    onclick="showPassword(${item.stage})">
+
+                    🔒
+
+                </button>
+
+                `;
+
+            }else{
+
+                html += `<div style="width:45px;"></div>`;
+
+            }
+
+            html += `
+
+            </div>
+
+            `;
+
+        });
+
+        html += `
+
+        </div>
+
+        `;
+
+    });
+
+    html += `
+
+    </div>
+
+    `;
+
+    app.innerHTML = html;
 
 }
 
 function showPacking(){
 
-    alert("次に作ります😊");
+    app.innerHTML = `
+
+    <div class="page">
+
+        <button class="backBtn"
+        onclick="showMenu()">
+
+            ← Home
+
+        </button>
+
+        <h1>🎒 Packing</h1>
+
+        <p style="text-align:center">
+
+            Part3で完成します😊
+
+        </p>
+
+    </div>
+
+    `;
 
 }
+
+// =====================
+// 起動
+// =====================
 
 showTop();
