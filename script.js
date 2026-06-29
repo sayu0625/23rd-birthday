@@ -4,61 +4,104 @@ const app = document.getElementById("app");
 const today = new Date();
 const trip = new Date(APP.startDate);
 
-today.setHours(0,0,0,0);
-trip.setHours(0,0,0,0);
+today.setHours(0, 0, 0, 0);
+trip.setHours(0, 0, 0, 0);
 
 const diff = trip - today;
-const days = Math.ceil(diff / (1000*60*60*24));
+const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
-let countdown;
+let countdown = "";
 
-if(days > 0){
-
+if (days > 0) {
     countdown = `あと ${days} 日`;
-
-}else if(days === 0){
-
-    countdown = "　Today!!　";
-
-}else{
-
+} else if (days === 0) {
+    countdown = "🎉 Today!";
+} else {
     countdown = "旅行中";
-
 }
 
 // トップ画面
-app.innerHTML = `
+function showTop() {
 
-<div class="hero">
+    app.innerHTML = `
 
-<div class="wave"></div>
+    <div class="hero">
 
-<div class="content">
+        <div class="wave"></div>
 
-<h1>${APP.title}</h1>
+        <div class="content">
 
-<h2>Welcome, ${APP.name}</h2>
+            <h1>${APP.title}</h1>
 
-<h3>${countdown}</h3>
+            <h2>Welcome, ${APP.name}</h2>
 
-<p>
+            <h3>${countdown}</h3>
 
-駿真の23歳の誕生日をお祝いする旅に行こう！！
+            <p>
+            今日は君のためだけに用意した
+            特別な旅。
+            </p>
 
-このしおりにはまだ秘密が隠されています…
+            <p>${APP.tripDate}</p>
 
-</p>
+            <button onclick="showMenu()">
+            旅をはじめる
+            </button>
 
-<p>${APP.tripDate}</p>
+        </div>
 
-<button id="startBtn">
+    </div>
 
-start
+    `;
 
-</button>
+}
 
-</div>
+// ホーム画面
+function showMenu(){
 
-</div>
+    app.innerHTML = `
 
-`;
+    <div class="page">
+
+        <h1>🌊 Home</h1>
+
+        <div class="menuCard" onclick="showSchedule()">
+
+            <div class="emoji">📅</div>
+
+            <h2>Schedule</h2>
+
+            <p>旅行スケジュールを見る</p>
+
+        </div>
+
+        <div class="menuCard" onclick="showPacking()">
+
+            <div class="emoji">🎒</div>
+
+            <h2>Packing List</h2>
+
+            <p>持ち物をチェックする</p>
+
+        </div>
+
+    </div>
+
+    `;
+
+}
+
+// 仮画面
+function showSchedule(){
+
+    alert("次に作ります😊");
+
+}
+
+function showPacking(){
+
+    alert("次に作ります😊");
+
+}
+
+showTop();
