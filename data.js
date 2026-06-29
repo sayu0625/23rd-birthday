@@ -1,7 +1,5 @@
 const APP = {
 
-    // ===== 基本情報 =====
-
     title: "23birthday",
 
     name: "Shumma",
@@ -10,8 +8,16 @@ const APP = {
 
     startDate: "2026-07-29",
 
+    ending: `
+Happy Birthday ❤️
 
-    // ===== 持ち物 =====
+最高の2日間になりますように。
+これからもたくさん思い出を作ろう！
+`,
+
+    // ======================
+    // 持ち物
+    // ======================
 
     packing: [
 
@@ -22,15 +28,16 @@ const APP = {
         "水着",
         "ラッシュガード",
         "タオル",
-        "サンダル",
         "帽子",
+        "サンダル",
         "日焼け止め",
         "プレゼント❤️"
 
     ],
 
-
-    // ===== スケジュール =====
+    // ======================
+    // スケジュール
+    // ======================
 
     schedule: [
 
@@ -42,9 +49,20 @@ const APP = {
 
                 {
                     time: "11:00",
-                    title: "Secret Lunch",
+
                     secret: true,
-                    stage: 0
+
+                    opened: false,
+
+                    title: "TSUNAMI",
+
+                    password: "tsunami",
+
+                    description: "横須賀バーガーで旅のスタート！",
+
+                    image: "images/tsunami.jpg",
+
+                    map: ""
                 },
 
                 {
@@ -52,9 +70,19 @@ const APP = {
                 },
 
                 {
-                    title: "Secret",
                     secret: true,
-                    stage: 1
+
+                    opened: false,
+
+                    title: "ミートステーション",
+
+                    password: "meat",
+
+                    description: "夜ご飯のお肉を買おう！",
+
+                    image: "images/meat.jpg",
+
+                    map: ""
                 },
 
                 {
@@ -63,14 +91,26 @@ const APP = {
 
                 {
                     time: "15:00",
+
                     title: "🏨 宿到着"
                 },
 
                 {
                     time: "16:00",
-                    title: "Secret",
+
                     secret: true,
-                    stage: 2
+
+                    opened: false,
+
+                    title: "にじいろさかな号",
+
+                    password: "fish",
+
+                    description: "三浦の海を楽しもう！",
+
+                    image: "images/boat.jpg",
+
+                    map: ""
                 },
 
                 {
@@ -96,119 +136,61 @@ const APP = {
             items: [
 
                 {
+
                     time: "11:30",
-                    title: "Secret",
+
                     secret: true,
-                    stage: 3
+
+                    opened: false,
+
+                    title: "くろば亭",
+
+                    password: "kurobatei",
+
+                    description: "新鮮なマグロランチ！",
+
+                    image: "images/kurobatei.jpg",
+
+                    map: ""
+
                 },
 
                 {
+
                     time: "13:00",
-                    title: "Secret",
+
                     secret: true,
-                    stage: 4
+
+                    opened: false,
+
+                    title: "SUP",
+
+                    password: "sup",
+
+                    description: "海の上をゆったり散歩！",
+
+                    image: "images/sup.jpg",
+
+                    map: ""
+
                 },
 
                 {
+
                     title: "♨ 温泉"
+
                 },
 
                 {
+
                     title: "🍳 夜ご飯"
+
                 }
 
             ]
 
         }
 
-    ],
-
-
-    // ===== パスワード付きスポット =====
-
-    stages: [
-
-        {
-
-            password: "tsunami",
-
-            title: "🍔 TSUNAMI",
-
-            description: "横須賀バーガーで旅のスタート！",
-
-            image: "images/tsunami.jpg",
-
-            map: ""
-
-        },
-
-        {
-
-            password: "meat",
-
-            title: "🥩 ミートステーション",
-
-            description: "お肉を買って夜ご飯の準備！",
-
-            image: "images/meat.jpg",
-
-            map: ""
-
-        },
-
-        {
-
-            password: "fish",
-
-            title: "🚤 にじいろさかな号",
-
-            description: "三浦の海を楽しもう！",
-
-            image: "images/boat.jpg",
-
-            map: ""
-
-        },
-
-        {
-
-            password: "kurobatei",
-
-            title: "🍣 くろば亭",
-
-            description: "新鮮なマグロランチ！",
-
-            image: "images/kurobatei.jpg",
-
-            map: ""
-
-        },
-
-        {
-
-            password: "sup",
-
-            title: "🏄 SUP",
-
-            description: "海の上をゆったりお散歩！",
-
-            image: "images/sup.jpg",
-
-            map: ""
-
-        }
-
-    ],
-
-
-    // ===== エンディング =====
-
-    ending: `
-Happy Birthday Shumma ❤️
-
-最高の2日間になりますように。
-
-これからもたくさん思い出を作ろう！
-`
+    ]
 
 };
