@@ -130,7 +130,7 @@ function showMenu(){
 // （Part2で完成させる）
 // =====================
 
-function showSchedule(){
+function showSchedule() {
 
     let html = `
 
@@ -151,12 +151,14 @@ function showSchedule(){
         <div class="dayCard">
 
             <div class="dayTitle">
+
                 ${day.day}
+
             </div>
 
         `;
 
-        day.items.forEach(item => {
+        day.items.forEach((item, index) => {
 
             html += `
 
@@ -166,46 +168,82 @@ function showSchedule(){
 
             `;
 
-            // 時間がある予定
-            if(item.time){
+            // 時間
+            if (item.time) {
+
+                html += `<span class="time">${item.time}</span>`;
+
+            } else {
+
+                html += `<span class="time"></span>`;
+
+            }
+
+            // Secretかどうか
+            if (item.secret) {
+
+                if (item.opened) {
+
+                    html += `
+
+                    <span>
+
+                        ✅ ${item.title}
+
+                    </span>
+
+                    `;
+
+                } else {
+
+                    html += `
+
+                    <span>
+
+                        🔒 次の目的地
+
+                    </span>
+
+                    `;
+
+                }
+
+            } else {
 
                 html += `
-                    <span class="time">${item.time}</span>
-                `;
 
-            }else{
+                <span>
 
-                html += `
-                    <span class="time"></span>
+                    ${item.title}
+
+                </span>
+
                 `;
 
             }
 
-            // タイトル
             html += `
-                <span>${item.title}</span>
-            `;
 
-            html += `
                 </div>
+
             `;
 
-            // Secretなら鍵ボタン
-            if(item.secret){
+            // ボタン
+            if (item.secret) {
 
                 html += `
 
                 <button
                     class="lockBtn"
-                    onclick="showPassword(${item.stage})">
+                    onclick="showPassword(${APP.schedule.indexOf(day)},${index})">
 
-                    🔒
+                    🔑
 
                 </button>
 
                 `;
 
-            }else{
+            } else {
 
                 html += `<div style="width:45px;"></div>`;
 
@@ -239,28 +277,61 @@ function showSchedule(){
 
 function showPacking(){
 
-    app.innerHTML = `
+    let html = `
 
     <div class="page">
 
-        <button class="backBtn"
-        onclick="showMenu()">
-
+        <button class="backBtn" onclick="showMenu()">
             ← Home
-
         </button>
 
-        <h1>🎒 Packing</h1>
+        <h1>🎒 Packing List</h1>
 
-        <p style="text-align:center">
+    `;
 
-            Part3で完成します😊
+    APP.packing.forEach((item,index)=>{
 
-        </p>
+        const checked =
+        localStorage.getItem("packing"+index)==="true";
+
+        html += `
+
+        <div class="packItem">
+
+            <input
+                type="checkbox"
+
+                ${checked ? "checked" : ""}
+
+                onchange="togglePacking(${index},this.checked)">
+
+            <span>${item}</span>
+
+        </div>
+
+        `;
+
+    });
+
+    html += `
 
     </div>
 
     `;
+
+    app.innerHTML = html;
+
+}
+
+function togglePacking(index,checked){
+
+    localStorage.setItem(
+
+        "packing"+index,
+
+        checked
+
+    );
 
 }
 
