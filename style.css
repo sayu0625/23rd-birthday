@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(180deg,#8fd3ff,#2f8dd8,#0b3d73);
+    min-height:100vh;
+    color:white;
+    overflow-x:hidden;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    padding:20px;
+}
+
+.content{
+    width:90%;
+    max-width:420px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    border-radius:30px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+.content h1{
+    font-size:42px;
+}
+
+.content h2{
+    margin:15px 0;
+    font-weight:300;
+}
+
+.content h3{
+    font-size:34px;
+    color:#FFF4B0;
+    margin:25px 0;
+}
+
+.content p{
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:18px;
+    border:none;
+    border-radius:40px;
+    background:white;
+    color:#2196f3;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.wave{
+    position:absolute;
+    bottom:-80px;
+    left:0;
+    width:200%;
+    height:220px;
+    background:rgba(255,255,255,.18);
+    border-radius:45%;
+    animation:wave 12s linear infinite;
+}
+
+@keyframes wave{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
