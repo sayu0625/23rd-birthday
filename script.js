@@ -94,7 +94,75 @@ function showMenu(){
 // 仮画面
 function showSchedule(){
 
-    alert("次に作ります😊");
+let html = `
+
+<div class="page">
+
+<button class="backBtn" onclick="showMenu()">
+← Home
+</button>
+
+<h1>📅 Schedule</h1>
+
+`;
+
+APP.schedule.forEach(day=>{
+
+html += `
+
+<div class="dayTitle">
+
+${day.day}
+
+</div>
+
+`;
+
+day.items.forEach(item=>{
+
+html += `
+
+<div class="scheduleCard">
+
+<div>
+
+${item.time ? `<span class="time">${item.time}</span>` : ""}
+
+${item.icon}
+
+${item.title}
+
+</div>
+
+`;
+
+if(item.secret){
+
+html += `
+
+<button class="lockBtn">
+
+🔒
+
+</button>
+
+`;
+
+}
+
+html += `
+
+</div>
+
+`;
+
+});
+
+});
+
+html += "</div>";
+
+app.innerHTML = html;
 
 }
 
