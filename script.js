@@ -18,7 +18,7 @@ if(days > 0){
 
 }else if(days === 0){
 
-    countdown = "🎉 Today!!";
+    countdown = "Today!!";
 
 }else{
 
@@ -43,9 +43,9 @@ app.innerHTML = `
 
 <p>
 
-今日は君のためだけに用意した
+駿真の23歳の誕生日をお祝いする旅に行こう！！
 
-特別な旅。
+このしおりにはまだ秘密が隠されています…
 
 </p>
 
@@ -53,7 +53,7 @@ app.innerHTML = `
 
 <button id="startBtn">
 
-旅をはじめる
+start
 
 </button>
 
