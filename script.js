@@ -127,7 +127,7 @@ html += `
 
 ${item.time ? `<span class="time">${item.time}</span>` : ""}
 
-${item.icon}
+${item.icon || ""}
 
 ${item.title}
 
