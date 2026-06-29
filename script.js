@@ -18,7 +18,7 @@ if(days > 0){
 
 }else if(days === 0){
 
-    countdown = "Today!!";
+    countdown = "　Today!!　";
 
 }else{
 
