@@ -511,7 +511,9 @@ function checkEnding(){
                     opened++;
                 }
 
-            });
+            }
+
+        });
 
     });
 
