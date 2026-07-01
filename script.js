@@ -129,6 +129,12 @@ function showMenu(){
 
         </div>
 
+        <button onclick="resetSecrets()">
+
+   　　 🔄 シークレットをリセット
+
+　　　　</button>
+
     </div>
 
     `;
