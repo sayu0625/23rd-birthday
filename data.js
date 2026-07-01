@@ -1,6 +1,6 @@
 const APP = {
 
-    title: "23birthday",
+    title: "23rd birthday",
 
     name: "Shumma",
 
@@ -24,14 +24,15 @@ Happy Birthday ❤️
         "財布",
         "スマホ",
         "充電器",
-        "モバイルバッテリー",
+        "着替え",
+        "下着（2セットあるといいかも）",
+        "パジャマ",
         "水着",
-        "ラッシュガード",
+        "濡れてもいいTシャツ",
         "タオル",
-        "帽子",
         "サンダル",
         "日焼け止め",
-        "プレゼント❤️"
+        
 
     ],
 
@@ -47,8 +48,13 @@ Happy Birthday ❤️
 
             items: [
 
-                {
+                 {
                     time: "11:00",
+                     
+                    title: "駿真ピックアップ"
+                },
+                {
+                    time: "11:30",
 
                     secret: true,
 
@@ -70,6 +76,8 @@ Happy Birthday ❤️
                 },
 
                 {
+                    time: "13:30",
+                    
                     secret: true,
 
                     opened: false,
@@ -78,21 +86,39 @@ Happy Birthday ❤️
 
                     password: "meat",
 
-                    description: "夜ご飯のお肉を買おう！",
+                    description: "今夜はちょっと贅沢に！葉山牛でお祝いしよう！",
 
                     image: "images/meat.jpg",
 
-                    map: ""
+                    map: "https://maps.app.goo.gl/ou89TuCjCRtUnm1s8"
                 },
 
                 {
-                    title: "🎂 ケーキ屋"
+                    time: "14:00",
+                    
+                    secret: true,
+
+                    opened: false,
+
+                    title: "タルト専門店　Maron",
+
+                    password: "meat",
+
+                    description: "タルト好きにはたまらない！お気に入りのケーキを選ぼう！",
+
+                    image: "images/meat.jpg",
+
+                    map: "https://maps.app.goo.gl/FuVZ6Qmjdhzbdnpe7"
                 },
 
                 {
                     time: "15:00",
 
-                    title: "🏨 宿到着"
+                    title: "宿に到着"
+                },
+                
+                 {
+                    title: "うらりマルシェ"
                 },
 
                 {
@@ -114,15 +140,11 @@ Happy Birthday ❤️
                 },
 
                 {
-                    title: "🛍️ うらりマルシェ"
+                    title: "城ヶ島"
                 },
 
                 {
-                    title: "🌊 城ヶ島"
-                },
-
-                {
-                    title: "🍳 夜ご飯"
+                    title: "夜ご飯"
                 }
 
             ]
@@ -137,7 +159,7 @@ Happy Birthday ❤️
 
                 {
 
-                    time: "11:30",
+                    time: "11:00",
 
                     secret: true,
 
@@ -147,11 +169,11 @@ Happy Birthday ❤️
 
                     password: "kurobatei",
 
-                    description: "新鮮なマグロランチ！",
+                    description: "新鮮なマグロランチを食べよう！",
 
                     image: "images/kurobatei.jpg",
 
-                    map: ""
+                    map: "https://maps.app.goo.gl/G7XUYvyv6yWhxpbs9"
 
                 },
 
@@ -163,27 +185,27 @@ Happy Birthday ❤️
 
                     opened: false,
 
-                    title: "SUP",
+                    title: "エスライド",
 
                     password: "sup",
 
-                    description: "海の上をゆったり散歩！",
+                    description: "SUPにチャレンジ！海の上をゆったり散歩！",
 
                     image: "images/sup.jpg",
 
-                    map: ""
+                    map: "https://maps.app.goo.gl/96f9m864BpCW3d9L9"
 
                 },
 
                 {
 
-                    title: "♨ 温泉"
+                    title: "温泉"
 
                 },
 
                 {
 
-                    title: "🍳 夜ご飯"
+                    title: "夜ご飯"
 
                 }
 
