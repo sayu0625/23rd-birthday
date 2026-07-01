@@ -426,6 +426,8 @@ function checkPassword(dayIndex, itemIndex){
         "true"
     );
 
+    checkEnding();
+
     showSecret(dayIndex,itemIndex);
 
 }else{
@@ -481,6 +483,71 @@ function showSecret(dayIndex,itemIndex){
                 onclick="window.open('${item.map}')">
 
                 📍Google Map
+
+            </button>
+
+        </div>
+
+    </div>
+
+    `;
+
+}
+
+function checkEnding(){
+
+    let total = 0;
+    let opened = 0;
+
+    APP.schedule.forEach(day => {
+
+        day.items.forEach(item => {
+
+            if(item.secret){
+
+                total++;
+
+                if(item.opened){
+                    opened++;
+                }
+
+            });
+
+    });
+
+    if(opened === total){
+
+        showEnding();
+
+    }
+
+}
+
+function showEnding(){
+
+    app.innerHTML = `
+
+    <div class="hero">
+
+        <div class="wave"></div>
+
+        <div class="content">
+
+            <h1>🎉 Congratulations!!</h1>
+
+            <h2>Happy Birthday</h2>
+
+            <h2>${APP.name} ❤️</h2>
+
+            <p>
+
+                ${APP.ending}
+
+            </p>
+
+            <button onclick="showMenu()">
+
+                Homeへ戻る
 
             </button>
 
