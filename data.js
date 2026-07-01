@@ -21,7 +21,6 @@ Happy Birthday ❤️
 
     packing: [
 
-        "財布",
         "スマホ",
         "充電器",
         "着替え",
@@ -30,9 +29,9 @@ Happy Birthday ❤️
         "水着",
         "濡れてもいいTシャツ",
         "タオル",
-        "サンダル",
+        "ビーチサンダル",
         "日焼け止め",
-        
+        "酔い止め",
 
     ],
 
@@ -63,7 +62,11 @@ Happy Birthday ❤️
 
                     title: "食事処　花々",
 
-                    password: "tsunami",
+                    question:"予行練習です。あなたの誕生日を入力してください。
+                        ＜br＞
+                        6月25日→0625",
+
+                    password: "0709",
 
                     description: "美味しい定食を食べよう！",
 
@@ -85,6 +88,8 @@ Happy Birthday ❤️
 
                     title: "ミートステーション",
 
+                    question:"",
+
                     password: "meat",
 
                     description: "今夜はちょっと贅沢に！葉山牛でお祝いしよう！",
@@ -102,6 +107,8 @@ Happy Birthday ❤️
                     opened: false,
 
                     title: "タルト専門店　Maron",
+
+                    question:"",
 
                     password: "meat",
 
@@ -128,6 +135,8 @@ Happy Birthday ❤️
                     secret: true,
 
                     opened: false,
+
+                    question:"",
 
                     title: "にじいろさかな号",
 
@@ -168,7 +177,9 @@ Happy Birthday ❤️
 
                     title: "くろば亭",
 
-                    password: "kurobatei",
+                    question:"今日泊まる宿の名前は？",
+
+                    password: "葉山商店",
 
                     description: "新鮮なマグロランチを食べよう！",
 
@@ -180,15 +191,17 @@ Happy Birthday ❤️
 
                 {
 
-                    time: "13:00",
+                    time: "12:45",
 
                     secret: true,
 
                     opened: false,
 
+                    question:"手紙の裏に書かれた言葉は？",
+
                     title: "エスライド",
 
-                    password: "sup",
+                    password: "LOVE",
 
                     description: "SUPにチャレンジ！海の上をゆったり散歩！",
 
@@ -200,9 +213,23 @@ Happy Birthday ❤️
 
                 {
 
+                    title: "↓ここから先は特に決めてないから、ゆったりしよう～↓"
+
+                },
+
+
+                {
+
+                    title: "カフェでスイーツ"
+
+                },
+
+                {
+
                     title: "温泉"
 
                 },
+
 
                 {
 
