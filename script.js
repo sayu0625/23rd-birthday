@@ -83,6 +83,12 @@ function showMenu(){
 
     <div class="page">
 
+     <div class="backTop" onclick="showTop()">
+
+        ← Welcome
+
+    </div>
+
         <h1>🌊 Home</h1>
 
         <p style="text-align:center;margin-bottom:35px;">
