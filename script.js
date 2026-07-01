@@ -24,7 +24,7 @@ let countdown = "";
 if (days > 0) {
     countdown = `あと ${days} 日`;
 } else if (days === 0) {
-    countdown = "🎉 Today!";
+    countdown = "Today!";
 } else {
     countdown = "旅行中";
 }
@@ -51,9 +51,13 @@ function showTop() {
 
             <p>
 
-                駿真の23歳の誕生日をお祝いする旅に行こう！
+                駿真の23歳の誕生日を
                 <br>
-                このしおりにはまだ秘密が隠されています...
+                お祝いする旅に行こう！
+                <br>
+                このしおりには
+                <br>
+                まだ秘密が隠されています...
 
             </p>
 
@@ -89,7 +93,7 @@ function showMenu(){
 
     </div>
 
-        <h1>🌊 Home</h1>
+        <h1> Home</h1>
 
         <p style="text-align:center;margin-bottom:35px;">
             いきたい画面を選んでね
@@ -199,7 +203,7 @@ function showSchedule() {
 
                     <span>
 
-                        ✅ ${item.title}
+                         ${item.title}
 
                     </span>
 
@@ -211,7 +215,7 @@ function showSchedule() {
 
                     <span>
 
-                        🔒 次の目的地
+                         次の目的地
 
                     </span>
 
@@ -368,7 +372,7 @@ function showPassword(dayIndex, itemIndex) {
             ← Schedule
         </button>
 
-        <h1>🔐 Password</h1>
+        <h1> Password</h1>
 
         <div class="dayCard">
 
@@ -432,7 +436,7 @@ function checkPassword(dayIndex, itemIndex){
 
 }else{
 
-    alert("パスワードが違います😢");
+    alert("パスワードが違います");
 
 }
 
