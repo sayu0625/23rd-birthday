@@ -61,19 +61,19 @@ Happy Birthday ❤️
 
                     opened: false,
 
-                    title: "TSUNAMI",
+                    title: "食事処　花々",
 
                     password: "tsunami",
 
-                    description: "横須賀バーガーで旅のスタート！",
+                    description: "美味しい定食を食べよう！",
 
                     image: "images/tsunami.jpg",
 
-                    map: ""
+                    map: "https://maps.app.goo.gl/2b84dP51hhBQWf2s5"
                 },
 
                 {
-                    title: "🛒 買い出し"
+                    title: "買い出し"
                 },
 
                 {
