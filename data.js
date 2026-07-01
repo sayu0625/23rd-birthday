@@ -67,7 +67,7 @@ Happy Birthday ❤️
 
                     description: "美味しい定食を食べよう！",
 
-                    image: "images/tsunami.jpg",
+                    image: "",
 
                     map: "https://maps.app.goo.gl/2b84dP51hhBQWf2s5"
                 },
@@ -107,7 +107,7 @@ Happy Birthday ❤️
 
                     description: "タルト好きにはたまらない！お気に入りのケーキを選ぼう！",
 
-                    image: "images/meat.jpg",
+                    image: "",
 
                     map: "https://maps.app.goo.gl/FuVZ6Qmjdhzbdnpe7"
                 },
@@ -135,7 +135,7 @@ Happy Birthday ❤️
 
                     description: "三浦の海を楽しもう！",
 
-                    image: "images/boat.jpg",
+                    image: "",
 
                     map: ""
                 },
@@ -172,7 +172,7 @@ Happy Birthday ❤️
 
                     description: "新鮮なマグロランチを食べよう！",
 
-                    image: "images/kurobatei.jpg",
+                    image: "",
 
                     map: "https://maps.app.goo.gl/G7XUYvyv6yWhxpbs9"
 
@@ -192,7 +192,7 @@ Happy Birthday ❤️
 
                     description: "SUPにチャレンジ！海の上をゆったり散歩！",
 
-                    image: "images/sup.jpg",
+                    image: "",
 
                     map: "https://maps.app.goo.gl/96f9m864BpCW3d9L9"
 
