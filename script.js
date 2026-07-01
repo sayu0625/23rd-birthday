@@ -407,15 +407,21 @@ function checkPassword(dayIndex, itemIndex){
 
     if(input === item.password){
 
-        item.opened = true;
+    item.opened = true;
 
-        showSecret(dayIndex,itemIndex);
+    // 保存
+    localStorage.setItem(
+        `opened_${dayIndex}_${itemIndex}`,
+        "true"
+    );
 
-    }else{
+    showSecret(dayIndex,itemIndex);
 
-        alert("パスワードが違います😢");
+}else{
 
-    }
+    alert("パスワードが違います😢");
+
+}
 
 }
 
