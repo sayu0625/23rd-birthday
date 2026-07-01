@@ -88,7 +88,7 @@ Happy Birthday ❤️
 
                     description: "今夜はちょっと贅沢に！葉山牛でお祝いしよう！",
 
-                    image: "images/meat.jpg",
+                    image: "https://tabelog.com/imgview/original?id=r27024293508009",
 
                     map: "https://maps.app.goo.gl/ou89TuCjCRtUnm1s8"
                 },
