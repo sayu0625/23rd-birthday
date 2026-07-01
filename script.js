@@ -382,9 +382,14 @@ function showPassword(dayIndex, itemIndex) {
 
         <div class="dayCard">
 
-            <p style="text-align:center;margin-bottom:20px;">
-                パスワードを入力してください
-            </p>
+            <p style="
+   　　　　　 white-space:pre-line;
+   　　　　　 text-align:left;
+  　　　　　  line-height:1.8;
+ 　　　　　   margin-bottom:25px;
+　　　　　　">
+　　　　　    ${item.question}
+　　　　　　</p>
 
             <input
                 id="passwordInput"
