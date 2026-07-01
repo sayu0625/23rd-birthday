@@ -48,11 +48,12 @@ Happy Birthday ❤️
 
             items: [
 
-                 {
+                {
                     time: "11:00",
                      
                     title: "駿真ピックアップ"
                 },
+                
                 {
                     time: "11:30",
 
@@ -117,7 +118,7 @@ Happy Birthday ❤️
                     title: "宿に到着"
                 },
                 
-                 {
+                {
                     title: "うらりマルシェ"
                 },
 
