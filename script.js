@@ -160,6 +160,11 @@ function showSchedule() {
 
         day.items.forEach((item, index) => {
 
+            item.opened =
+            localStorage.getItem(
+            `opened_${APP.schedule.indexOf(day)}_${index}`
+            ) === "true";
+
             html += `
 
             <div class="scheduleItem">
