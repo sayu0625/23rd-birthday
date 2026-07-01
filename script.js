@@ -430,9 +430,15 @@ function checkPassword(dayIndex, itemIndex){
         "true"
     );
 
-    checkEnding();
+   if(checkEnding()){
 
-    showSecret(dayIndex,itemIndex);
+       showEnding();
+
+   }else{
+
+       showSecret(dayIndex,itemIndex);
+
+   }
 
 }else{
 
@@ -521,11 +527,7 @@ function checkEnding(){
 
     });
 
-    if(opened === total){
-
-        showEnding();
-
-    }
+    return opened === total;
 
 }
 
