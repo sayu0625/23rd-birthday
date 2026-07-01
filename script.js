@@ -340,3 +340,137 @@ function togglePacking(index,checked){
 // =====================
 
 showTop();
+
+// =====================
+// パスワード画面
+// =====================
+
+function showPassword(dayIndex, itemIndex) {
+
+    const item = APP.schedule[dayIndex].items[itemIndex];
+
+    app.innerHTML = `
+
+    <div class="page">
+
+        <button class="backBtn" onclick="showSchedule()">
+            ← Schedule
+        </button>
+
+        <h1>🔐 Password</h1>
+
+        <div class="dayCard">
+
+            <p style="text-align:center;margin-bottom:20px;">
+                パスワードを入力してください
+            </p>
+
+            <input
+                id="passwordInput"
+                type="password"
+                placeholder="Password"
+                style="
+                    width:100%;
+                    padding:15px;
+                    border:none;
+                    border-radius:15px;
+                    font-size:18px;
+                    text-align:center;
+                    margin-bottom:20px;
+                ">
+
+            <button
+                onclick="checkPassword(${dayIndex},${itemIndex})">
+
+                OPEN
+
+            </button>
+
+        </div>
+
+    </div>
+
+    `;
+
+}
+
+// =====================
+// パスワード確認
+// =====================
+
+function checkPassword(dayIndex, itemIndex){
+
+    const item = APP.schedule[dayIndex].items[itemIndex];
+
+    const input =
+    document.getElementById("passwordInput").value;
+
+    if(input === item.password){
+
+        item.opened = true;
+
+        showSecret(dayIndex,itemIndex);
+
+    }else{
+
+        alert("パスワードが違います😢");
+
+    }
+
+}
+
+// =====================
+// シークレット画面
+// =====================
+
+function showSecret(dayIndex,itemIndex){
+
+    const item = APP.schedule[dayIndex].items[itemIndex];
+
+    app.innerHTML = `
+
+    <div class="page">
+
+        <button class="backBtn"
+            onclick="showSchedule()">
+
+            ← Schedule
+
+        </button>
+
+        <h1>${item.title}</h1>
+
+        <div class="dayCard">
+
+            <p style="font-size:20px;
+                      text-align:center;
+                      margin-bottom:20px;">
+
+                ${item.description}
+
+            </p>
+
+            <img
+
+                src="${item.image}"
+
+                style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                ">
+
+            <button
+                onclick="window.open('${item.map}')">
+
+                📍Google Map
+
+            </button>
+
+        </div>
+
+    </div>
+
+    `;
+
+}
