@@ -51,9 +51,9 @@ function showTop() {
 
             <p>
 
-                今日は君のためだけに用意した
+                駿真の23歳の誕生日をお祝いする旅に行こう！
                 <br>
-                特別な旅。
+                このしおりにはまだ秘密が隠されています...
 
             </p>
 
@@ -61,7 +61,7 @@ function showTop() {
 
             <button onclick="showMenu()">
 
-                旅をはじめる
+                START
 
             </button>
 
@@ -92,7 +92,7 @@ function showMenu(){
         <h1>🌊 Home</h1>
 
         <p style="text-align:center;margin-bottom:35px;">
-            行きたい画面を選んでね
+            いきたい画面を選んでね
         </p>
 
         <div class="menuCard"
@@ -105,7 +105,7 @@ function showMenu(){
             <h2>Schedule</h2>
 
             <p>
-                旅行スケジュールを見る
+                旅行のスケジュールを見る
             </p>
 
         </div>
