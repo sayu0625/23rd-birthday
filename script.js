@@ -129,11 +129,6 @@ function showMenu(){
 
         </div>
 
-        <button onclick="resetSecrets()">
-
-   　　 🔄 シークレットをリセット
-
-　　　　</button>
 
     </div>
 
@@ -554,11 +549,11 @@ function showEnding(){
 
         <div class="content">
 
-            <h1>🎉 Congratulations!!</h1>
+            <h1>Congratulations!</h1>
 
             <h2>Happy Birthday</h2>
 
-            <h2>${APP.name} ❤️</h2>
+            <h2>❤️ ${APP.name} ❤️</h2>
 
             <p>
 
