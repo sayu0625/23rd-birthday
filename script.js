@@ -392,18 +392,22 @@ function showPassword(dayIndex, itemIndex) {
             </p>
 
             <input
-                id="passwordInput"
-                type="password"
-                placeholder="Password"
-                style="
-                    width:100%;
-                    padding:15px;
-                    border:none;
-                    border-radius:15px;
-                    font-size:18px;
-                    text-align:center;
-                    margin-bottom:20px;
-                ">
+    id="passwordInput"
+    type="text"
+    placeholder="答えを入力"
+    autocapitalize="off"
+    autocomplete="off"
+    autocorrect="off"
+    spellcheck="false"
+    style="
+        width:100%;
+        padding:15px;
+        border:none;
+        border-radius:15px;
+        font-size:18px;
+        text-align:center;
+        margin-bottom:20px;
+    ">
 
             <button
                 onclick="checkPassword(${dayIndex},${itemIndex})">
