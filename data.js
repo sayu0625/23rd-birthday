@@ -212,7 +212,7 @@ const APP = {
 
                     description: "SUPにチャレンジ！海の上をゆったり散歩！",
 
-                    image: "",
+                    image: "IMG_3312.jpeg",
 
                     map: "https://maps.app.goo.gl/96f9m864BpCW3d9L9"
 
