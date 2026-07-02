@@ -439,21 +439,12 @@ function checkPassword(dayIndex, itemIndex){
 
     item.opened = true;
 
-    // 保存
     localStorage.setItem(
         `opened_${dayIndex}_${itemIndex}`,
         "true"
     );
 
-   if(checkEnding()){
-
-       showEnding();
-
-   }else{
-
-       showSecret(dayIndex,itemIndex);
-
-   }
+    showSecret(dayIndex,itemIndex);
 
 }else{
 
@@ -510,6 +501,13 @@ function showSecret(dayIndex,itemIndex){
                 📍Google Map
 
             </button>
+
+            ${checkEnding() ? `
+            <button onclick="showEnding()"
+            style="margin-top:20px;">
+            🎉 最後のシークレットを開放しました
+            </button>
+            ` : ""}
 
         </div>
 
