@@ -9,10 +9,9 @@ const APP = {
     startDate: "2026-07-29",
 
     ending: `
-Happy Birthday ❤️
 
-最高の2日間になりますように。
-これからもたくさん思い出を作ろう！
+最高の2日間になりますように✨
+これからもたくさん思い出作ろうね！
 `,
 
     // ======================
@@ -92,9 +91,9 @@ Happy Birthday ❤️
 
                     title: "ミートステーション",
 
-                    question:"",
+                    question:"今日はなんの日？（〇〇の日）",
 
-                    password: "meat",
+                    password: "にく",
 
                     description: "今夜はちょっと贅沢に！葉山牛でお祝いしよう！",
 
@@ -112,9 +111,9 @@ Happy Birthday ❤️
 
                     title: "タルト専門店　Maron",
 
-                    question:"",
+                    question:"誕生日には欠かせない「あれ」の中で、駿真が好きなのは？",
 
-                    password: "meat",
+                    password: "タルト",
 
                     description: "タルト好きにはたまらない！お気に入りのケーキを選ぼう！",
 
@@ -140,21 +139,21 @@ Happy Birthday ❤️
 
                     opened: false,
 
-                    question:"",
+                    question:"去年の誕生日、駿真が香水につけた名前は？",
 
                     title: "にじいろさかな号",
 
-                    password: "fish",
+                    password: "crisp sunny",
 
-                    description: "三浦の海を楽しもう！",
+                    description: "船に乗って、三浦の海を楽しもう！",
 
                     image: "",
 
-                    map: ""
+                    map: "https://maps.app.goo.gl/zW9esryZkAz24Fss9?g_st=ic"
                 },
 
                 {
-                    title: "城ヶ島"
+                    title: "城ヶ島までお散歩"
                 },
 
                 {
