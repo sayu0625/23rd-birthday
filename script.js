@@ -383,13 +383,13 @@ function showPassword(dayIndex, itemIndex) {
         <div class="dayCard">
 
             <p style="
-   　　　　　 white-space:pre-line;
-   　　　　　 text-align:left;
-  　　　　　  line-height:1.8;
- 　　　　　   margin-bottom:25px;
-　　　　　　">
-　　　　　    ${item.question}
-　　　　　　</p>
+              white-space: pre-line;
+              text-align: left;
+              line-height: 1.8;
+              margin-bottom: 25px;
+            ">
+              ${item.question}
+            </p>
 
             <input
                 id="passwordInput"
