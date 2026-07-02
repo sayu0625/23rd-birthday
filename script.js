@@ -549,7 +549,7 @@ function showEnding(){
 
         <div class="content">
 
-            <h1>Congratulations!</h1>
+            <h1>🎉🎉🎉</h1>
 
             <h2>Happy Birthday</h2>
 
